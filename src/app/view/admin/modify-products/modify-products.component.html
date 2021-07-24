@@ -18,11 +18,13 @@
     
           <div class="modal-body text-center">
             <h2 class="text-secondary">
-              Are you sure you want to remove this category ?
+              <!-- Are you sure you want to remove this category ? -->
+              This function has been disabled to preserve the database
             </h2>
             <div class="d-flex justify-content-center">
-              <button class="btn btn-secondary mr-3" (click)="modalRef.hide()">DISMISS</button>
-              <button class="btn btn-success" (click)="deleteCategory(selectedCategory._id);modalRef.hide()">CONFIRM</button>
+              <!-- <button class="btn btn-secondary mr-3" (click)="modalRef.hide()">DISMISS</button>
+              <button class="btn btn-success" (click)="deleteCategory(selectedCategory._id);modalRef.hide()">CONFIRM</button> -->
+              <button class="btn btn-success" (click)="modalRef.hide()">Okay</button>
             </div>
             <div class="text-center" *ngIf='loading'>
               <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
@@ -95,20 +97,24 @@
     
                 <div class="modal-body text-center">
                   <h2 class="text-secondary">
-                    Are you sure you want to remove this product ?
+                    <!-- Are you sure you want to remove this product ? -->
+                    This function has been disabled to preserve the database
                   </h2>
                   <div class="d-flex justify-content-center">
-                    <button class="btn btn-secondary mr-3" (click)="modalRef.hide()">DISMISS</button>
-                    <button class="btn btn-success" (click)="deleteProduct(product._id,selectedCategory.products.length,selectedCategory._id,selectedCategory.name);modalRef.hide()">CONFIRM</button>
-                  
+                    <!-- <button class="btn btn-secondary mr-3" (click)="modalRef.hide()">DISMISS</button>
+                    <button class="btn btn-success" (click)="deleteProduct(product._id,selectedCategory.products.length,selectedCategory._id,selectedCategory.name);modalRef.hide()">CONFIRM</button> -->
+                    <button class="btn btn-success" (click)="modalRef.hide()">Okay</button>
                   </div>
                   <div class="text-center" *ngIf='loading'>
                     <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
                   </div>
                 </div>
               </ng-template>
-              <button class="btn btn-primary mr-3" (click)="updateProduct(product._id,product.category)">update</button>
+              <button class="btn btn-primary mr-3" 
+              (click)="openModal(deletecategory)"
+              >update</button>
               <i class="fas fa-trash-alt" style="font-size: 20px;" (click)="openModal(template)"></i>
+              <!-- (click)="updateProduct(product._id,product.category)" -->
             </div>
     
           </div>
