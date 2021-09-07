@@ -164,6 +164,7 @@ export class CartDetailsComponent implements OnInit,OnDestroy {
     this.toastr.success('product updated succesfuly', 'success', {
       timeOut: 2000,
     });
+    this.cartservice.getCartData()
   }
   chickOut(template:any) {
     this.modalRef = this.modalService.show(template);

@@ -15,14 +15,14 @@
                          
                         
                         
-                            <img class="mr-3 w-25" style="height: 100px;width: 100px;" [src]="cart.chosenProduct?.image" alt="">
+                            <img class="mr-3" style="width: 100px;" [src]="cart.chosenProduct?.image" alt="">
                             <div>
                                 <h3 class="font-weight-bold mb-2">{{cart.chosenProduct?.name}}</h3>
                                  <p  *ngIf="cart.chosenProduct?.sizes.length" class="text-secondary">
                                      <span class="d-block mb-2">{{cart.size}}</span>
                     
                                  </p> 
-                                <span  *ngIf="cart.chosenProduct?.sizes.length" (click)="openCustomizeModal(customize,cart,i)" style="cursor: pointer;background-color: #ebebeb;"  class="p-2 mt-2 d-block" >Customize</span>
+                                <span style="width: auto;" *ngIf="cart.chosenProduct?.sizes.length" (click)="openCustomizeModal(customize,cart,i)" style="cursor: pointer;background-color: #ebebeb;"  class="p-2 text-center rounded-lg mt-2 d-block" >Customize</span>
                             </div>
                         </div>
                     </div>
