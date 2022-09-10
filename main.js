@@ -54,7 +54,7 @@ AuthLayoutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\430 G3\Desktop\restaurant\src\main.ts */"zUnb");
+module.exports = __webpack_require__(/*! C:\Users\430 G3\Desktop\restaurant\Restaurant\src\main.ts */"zUnb");
 
 
 /***/ }),
@@ -148,7 +148,7 @@ __webpack_require__.r(__webpack_exports__);
 // The list of file replacements can be found in `angular.json`.
 const environment = {
     production: false,
-    apiUrl: "https://resturant-api.herokuapp.com"
+    apiUrl: "https://resturant-app.onrender.com"
 };
 /*
  * For easier debugging in development mode, you can import the following file
