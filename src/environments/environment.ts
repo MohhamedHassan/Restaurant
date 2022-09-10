@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl:"https://resturant-api.herokuapp.com"
+  apiUrl:"https://resturant-app.onrender.com"
 };
 
 /*
